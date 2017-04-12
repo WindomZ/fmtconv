@@ -1,11 +1,14 @@
 {
   "name": "fmtconv",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert between JSON and YAML format.",
   "preferGlobal": true,
-  "main": "./bin/fmtconv",
+  "main": "index.js",
   "bin": {
-    "ua-string": "./bin/fmtconv"
+    "fmtconv": "./bin/fmtconv"
+  },
+  "engines": {
+    "node": ">= 0.6.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/WindomZ/fmtconv/issues"
   },
-  "homepage": "https://github.com/WindomZ/fmtconv#readme"
+  "homepage": "https://github.com/WindomZ/fmtconv#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "commander": "^2.9.0",
+    "js-yaml": "^3.8.3"
+  }
 }
