@@ -1,0 +1,30 @@
+{
+  "name": "fmtconv",
+  "version": "0.0.1",
+  "description": "Convert between JSON and YAML format.",
+  "preferGlobal": true,
+  "main": "./bin/fmtconv",
+  "bin": {
+    "ua-string": "./bin/fmtconv"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WindomZ/fmtconv.git"
+  },
+  "keywords": [
+    "format",
+    "converter",
+    "convert",
+    "JSON",
+    "YAML"
+  ],
+  "author": "WindomZ <git.windomz@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WindomZ/fmtconv/issues"
+  },
+  "homepage": "https://github.com/WindomZ/fmtconv#readme"
+}
