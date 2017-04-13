@@ -44,9 +44,9 @@ $ fmtconv -h
 
     -h, --help           output usage information
     -V, --version        output the version number
-    -c, --compress       compress JSON format strings
     -o, --output <file>  output a JSON/YAML file
     -i, --input <file>   input a JSON/YAML file
+    -c, --compact        compact JSON/YAML format string
     --debug              debug mode, such as print error tracks
 ```
 
