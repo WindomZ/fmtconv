@@ -42,7 +42,21 @@ test('fmtconv fail', async (t) => {
 
 test('fmtconv example-1 pass', async (t) => {
   await fmtconvPromise('./examples/yaml-1.yaml',
+    './examples/yaml-1.fmtconv.yaml', true)
+    .then(() => {
+      t.pass()
+    })
+    .catch(err => t.fail(err))
+
+  await fmtconvPromise('./examples/yaml-1.yaml',
     './examples/yaml-1.fmtconv.yaml')
+    .then(() => {
+      t.pass()
+    })
+    .catch(err => t.fail(err))
+
+  await fmtconvPromise('./examples/yaml-1.yaml',
+    './examples/yaml-1.fmtconv.json', true)
     .then(() => {
       t.pass()
     })
@@ -56,7 +70,21 @@ test('fmtconv example-1 pass', async (t) => {
     .catch(err => t.fail(err))
 
   await fmtconvPromise('./examples/json-1.json',
+    './examples/json-1.fmtconv.json', true)
+    .then(() => {
+      t.pass()
+    })
+    .catch(err => t.fail(err))
+
+  await fmtconvPromise('./examples/json-1.json',
     './examples/json-1.fmtconv.json')
+    .then(() => {
+      t.pass()
+    })
+    .catch(err => t.fail(err))
+
+  await fmtconvPromise('./examples/json-1.json',
+    './examples/json-1.fmtconv.yaml', true)
     .then(() => {
       t.pass()
     })
