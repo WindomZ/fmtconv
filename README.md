@@ -14,8 +14,8 @@ Convert between **JSON** and **YAML** format files.
 ## Features
 
 - [x] Support **JSON**/**YAML** format files.
-- [x] *Convert* with **JSON**/**YAML** format file.
-- [x] *Transcode* with **JSON**/**YAML** format string.
+- [x] *Convert* with **JSON**/**YAML** format files.
+- [x] *Transcode* with **JSON**/**YAML** format strings.
 
 ## Installation
 
@@ -36,7 +36,7 @@ npm install --save fmtconv
 ```bash
 $ fmtconv -h
 
-  Usage: fmtconv [-h] [-v] [-o file] <-i file | file>
+  Usage: fmtconv [-h] [-v] [-c] [-o file] <-i file | file>
 
   Convert between JSON and YAML format files.
 
@@ -44,6 +44,7 @@ $ fmtconv -h
 
     -h, --help           output usage information
     -V, --version        output the version number
+    -c, --compress       compress JSON format strings
     -o, --output <file>  output a JSON/YAML file
     -i, --input <file>   input a JSON/YAML file
     --debug              debug mode, such as print error tracks
