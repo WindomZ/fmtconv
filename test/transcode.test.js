@@ -42,6 +42,14 @@ test('transcode.stringJSON2YAML fail', t => {
 
 test('transcode.stringJSON2YAML pass', t => {
   try {
+    let result = stringJSON2YAML('{"a":1, "b":2}', true)
+    t.is(result, 'a: 1\nb: 2\n')
+    t.pass()
+  } catch (e) {
+    t.fail(e)
+  }
+
+  try {
     let result = stringJSON2YAML('{"a":1, "b":2}')
     t.is(result, 'a: 1\nb: 2\n')
     t.pass()
@@ -90,6 +98,14 @@ test('transcode.stringYAML2JSON fail', t => {
 
 test('transcode.stringYAML2JSON pass', t => {
   try {
+    let result = stringYAML2JSON('a: 1\nb: 2', true)
+    t.is(result, '{"a":1,"b":2}')
+    t.pass()
+  } catch (e) {
+    t.fail(e)
+  }
+
+  try {
     let result = stringYAML2JSON('a: 1\nb: 2')
     t.is(result, `{
   "a": 1,
@@ -132,6 +148,14 @@ test('transcode.stringJSON2JSON fail', t => {
 })
 
 test('transcode.stringJSON2JSON pass', t => {
+  try {
+    let result = stringJSON2JSON('{"a":1, "b":2}', true)
+    t.is(result, '{"a":1,"b":2}')
+    t.pass()
+  } catch (e) {
+    t.fail(e)
+  }
+
   try {
     let result = stringJSON2JSON('{"a":1, "b":2}')
     t.is(result, `{
@@ -186,6 +210,13 @@ test('transcode.stringYAML2YAML fail', t => {
 })
 
 test('transcode.stringYAML2YAML pass', t => {
+  try {
+    let result = stringYAML2YAML('a: 1\nb: 2', true)
+    t.is(result, 'a: 1\nb: 2\n')
+    t.pass()
+  } catch (e) {
+    t.fail(e)
+  }
   try {
     let result = stringYAML2YAML('a: 1\nb: 2')
     t.is(result, 'a: 1\nb: 2\n')
