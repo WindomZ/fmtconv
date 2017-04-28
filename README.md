@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/fmtconv/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/fmtconv?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
-Convert between **JSON** and **YAML** format files.
+> Convert between **JSON** and **YAML** format files.
 
 [![fmtconv](https://img.shields.io/npm/v/fmtconv.svg)](https://www.npmjs.com/package/fmtconv)
 ![status](https://img.shields.io/badge/status-beta-green.svg)
