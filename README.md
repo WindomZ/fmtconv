@@ -60,17 +60,17 @@ Here we cover the most 'useful' methods.
 const fmtconv = require('fmtconv')
 ```
 
-### fmtconv (string, string)
+### fmtconv (input:string, output:string)
 
 **Convert between JSON and YAML format files.**
 The first string sets an input file path, 
 the second string sets an output file path.
 
-### .stringJSON2YAML (string)
+### .stringJSON2YAML (content:string)
 
 **Transcode JSON to YAML string.**
 
-### .stringYAML2JSON (string)
+### .stringYAML2JSON (content:string)
 
 **Transcode YAML to JSON string.**
 
