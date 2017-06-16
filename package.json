@@ -1,13 +1,13 @@
 {
   "name": "fmtconv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert between JSON and YAML format files.",
   "main": "index.js",
   "bin": {
     "fmtconv": "./bin/fmtconv"
   },
   "engines": {
-    "node": ">= 0.6.x"
+    "node": ">=6"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
@@ -31,11 +31,11 @@
   "homepage": "https://github.com/WindomZ/fmtconv#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "js-yaml": "^3.8.3"
+    "js-yaml": "^3.8.4"
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "coveralls": "^2.13.0",
+    "coveralls": "^2.13.1",
     "nyc": "^11.0.2",
     "standard": "*"
   }
