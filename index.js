@@ -3,6 +3,4 @@
  */
 'use strict'
 
-const fmtconv = require('./lib/fmtconv')
-
-module.exports = fmtconv
+module.exports = require('./lib/fmtconv')

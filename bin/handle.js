@@ -5,7 +5,7 @@
 
 const path = require('path')
 
-const fmtconv = require('../fmtconv')
+const fmtconv = require('../lib/fmtconv')
 
 function * handle (param) {
   if (!param.input) {
@@ -13,8 +13,8 @@ function * handle (param) {
   }
 
   let ext = path.extname(param.input).toLowerCase()
-  if (ext !== '.yaml' && ext !== '.json') {
-    throw new TypeError('File extension must be ".yaml" or ".json", instead of "' + ext + '"')
+  if (ext !== '.yaml' && ext !== '.yml' && ext !== '.json') {
+    throw new TypeError('File extension must be ".yaml" or ".yml" or ".json", instead of "' + ext + '"')
   }
 
   if (!param.output) {
@@ -22,8 +22,8 @@ function * handle (param) {
       path.basename(param.input, ext) + '.fmtconv' + ext)
   } else {
     let ext = path.extname(param.output).toLowerCase()
-    if (ext !== '.yaml' && ext !== '.json') {
-      throw new TypeError('File extension must be ".yaml" or ".json", instead of "' + ext + '"')
+    if (ext !== '.yaml' && ext !== '.yml' && ext !== '.json') {
+      throw new TypeError('File extension must be ".yaml" or ".yml" or ".json", instead of "' + ext + '"')
     }
   }
 
