@@ -1,13 +1,13 @@
 {
   "name": "fmtconv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert between JSON and YAML format files.",
   "main": "index.js",
   "bin": {
     "fmtconv": "./bin/fmtconv.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=6.9"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
@@ -37,6 +37,6 @@
     "ava": "^0.23.0",
     "coveralls": "^3.0.0",
     "nyc": "^11.0.2",
-    "standard": "*"
+    "standard": "^10.0.3"
   }
 }
