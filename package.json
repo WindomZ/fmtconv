@@ -30,13 +30,13 @@
   },
   "homepage": "https://github.com/WindomZ/fmtconv#readme",
   "dependencies": {
-    "commander": "^2.9.0",
-    "js-yaml": "^3.8.4"
+    "commander": "^2.12.1",
+    "js-yaml": "^3.10.0"
   },
   "devDependencies": {
     "ava": "^0.23.0",
     "coveralls": "^3.0.0",
-    "nyc": "^11.0.2",
+    "nyc": "^11.3.0",
     "standard": "^10.0.3"
   }
 }
