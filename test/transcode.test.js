@@ -58,7 +58,7 @@ test('transcode.stringJSON2YAML pass', t => {
   }
 
   try {
-    let result = stringJSON2YAML({'a': 1, 'b': 2})
+    let result = stringJSON2YAML({ 'a': 1, 'b': 2 })
     t.is(result, 'a: 1\nb: 2\n')
     t.pass()
   } catch (e) {
@@ -168,7 +168,7 @@ test('transcode.stringJSON2JSON pass', t => {
   }
 
   try {
-    let result = stringJSON2JSON({'a': 1, 'b': 2})
+    let result = stringJSON2JSON({ 'a': 1, 'b': 2 })
     t.is(result, `{
   "a": 1,
   "b": 2
