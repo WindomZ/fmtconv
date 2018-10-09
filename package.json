@@ -7,7 +7,7 @@
     "fmtconv": "./bin/fmtconv.js"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=6.14"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/WindomZ/fmtconv#readme",
   "dependencies": {
-    "commander": "^2.17.1",
+    "commander": "^2.19.0",
     "js-yaml": "^3.12.0"
   },
   "devDependencies": {
