@@ -1,6 +1,6 @@
 {
   "name": "fmtconv",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Convert between JSON and YAML format files.",
   "main": "index.js",
   "bin": {
