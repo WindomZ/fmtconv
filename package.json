@@ -7,10 +7,13 @@
     "fmtconv": "./bin/fmtconv.js"
   },
   "engines": {
-    "node": ">=6.14"
+    "node": ">=12.22"
   },
   "scripts": {
-    "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
+    "lint": "standard",
+    "test": "nyc --reporter=lcov --reporter=text ava",
+    "test-coveralls": "node ./bin/nyc && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
+    "coverage": "nyc report --reporter=lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,13 +33,13 @@
   },
   "homepage": "https://github.com/WindomZ/fmtconv#readme",
   "dependencies": {
-    "commander": "^5.0.0",
-    "js-yaml": "^3.13.1"
+    "commander": "^9.0.0",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "ava": "^3.0.0",
-    "coveralls": "^3.0.3",
-    "nyc": "^15.0.0",
-    "standard": "^14.0.0"
+    "ava": "^4.0.1",
+    "coveralls": "^3.1.1",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.4"
   }
 }

@@ -59,82 +59,82 @@ test('fmtconv example-1 pass', async (t) => {
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yaml-1.yaml',
     './examples/yaml-1.fmtconv.yaml')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yaml-1.yaml',
     './examples/yaml-1.fmtconv.json', true)
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yaml-1.yaml',
     './examples/yaml-1.fmtconv.json')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yml-1.yml',
     './examples/yml-1.fmtconv.yaml', true)
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yml-1.yml',
     './examples/yml-1.fmtconv.yaml')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yml-1.yml',
     './examples/yml-1.fmtconv.json', true)
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/yml-1.yml',
     './examples/yml-1.fmtconv.json')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/json-1.json',
     './examples/json-1.fmtconv.json', true)
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/json-1.json',
     './examples/json-1.fmtconv.json')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/json-1.json',
     './examples/json-1.fmtconv.yaml', true)
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 
   await fmtconvPromise('./examples/json-1.json',
     './examples/json-1.fmtconv.yaml')
     .then(() => {
       t.pass()
     })
-    .catch(err => t.fail(err))
+    .catch(err => t.fail(err.message))
 })
